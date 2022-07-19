@@ -1,0 +1,12 @@
+.partner-images {
+    padding-bottom: 72px;
+
+    @media (max-width: 680px) {
+        margin-top: 32px;
+
+        img {
+            width: 90%;
+            padding-left: 5%;
+        }
+    }
+}

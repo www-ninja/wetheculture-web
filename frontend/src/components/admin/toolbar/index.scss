@@ -1,0 +1,23 @@
+.tool-bar {
+    background-color: white;
+    height: 80px;
+    width: calc(100vw - 300px);
+    box-shadow: 1px 1px 5px lightgray;
+    position: fixed;
+    top: 0;
+    left: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .btn-logout {
+        text-transform: capitalize;
+        padding: 20px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover  {
+            text-decoration: underline;
+        }
+    }
+}

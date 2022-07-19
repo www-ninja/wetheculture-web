@@ -1,0 +1,30 @@
+.select {
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: none;
+
+    > div {
+        border: none;
+        border-bottom: 1px solid #505da7;
+        border-radius: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: black;
+
+        &:hover {
+            border-color: white;
+            border-bottom: 1px solid #505da7;
+            box-shadow: none;
+        }
+
+        > div {
+            padding: 0;
+        }   
+    }
+
+    [class*="-IndicatorsContainer"] {
+        display: none;
+    }
+}

@@ -1,0 +1,109 @@
+.contact-form {
+    background: #0D1731;
+    padding: 40px;
+    width: 640px;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+    @media (max-width: 680px) {
+        padding: 20px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .form-title {
+            color: #F3A83A;
+            font-size: 35px;
+            text-align: center;
+
+            @media (max-width: 680px) {
+                font-size: 25px;
+            }
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            font-family: Avenir;
+
+            @media (max-width: 680px) {
+                margin-top: 10px;
+            }
+
+            label {
+                font-size: 20px;
+                color: white;
+                margin-bottom: 10px;
+
+                @media (max-width: 680px) {
+                    font-size: 16px;
+                }
+            }
+
+            input {
+                font-size: 20px;
+                outline: none;
+                height: 45px;
+                border: none;
+                box-sizing: border-box;
+                padding: 5px 10px;
+
+                @media (max-width: 680px) {
+                    font-size: 16px;
+                    padding: 3px 6px;
+                    height: 35px;
+                }
+            }
+
+            p.error {
+                color: red;
+                font-size: 16px;
+                margin-top: 10px;
+                padding: 0;
+
+                @media (max-width: 680px) {
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+            }
+
+            textarea {
+                resize: none;
+                padding: 5px 10px;
+                font-size: 20px;
+
+                @media (max-width: 680px) {
+                    font-size: 16px;
+                    padding: 3px 6px;
+                }
+            }
+        }
+
+        input[type="submit"] {
+            width: 200px;
+            height: 50px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            margin: auto;
+            margin-top: 50px;
+            background: #F3A83A;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            @media (max-width: 680px) {
+                font-size: 16px;
+                height: 35px;
+                width: 100%;
+                margin: 50px auto;
+            }
+        }
+    }
+}

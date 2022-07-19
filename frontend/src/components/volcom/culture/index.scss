@@ -1,0 +1,127 @@
+.culture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    justify-content: center;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    .container {
+        display: flex;
+        padding-left: 150px;
+        padding-right: 150px;
+
+        @media (max-width: 1024px) {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        @media (max-width: 680px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .one,
+    .two {
+        display: inline-block;
+    }
+
+    .left-wrapper,
+    .right-wrapper {
+        display: inline-block;
+    }
+
+    hr {
+        width: 0px;
+        margin-right: 50px;
+        margin-top: 30px;
+        height: 145.42px;
+        left: 126.44px;
+        top: 527.92px;
+        border: 2px solid #000000;
+    }
+
+
+    li {
+        font-weight: 800;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @media (max-width: 1024px) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        @media (max-width: 680px) {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+
+    .offer {
+        width: 75%;
+        color: #0D1731;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+        box-sizing: border-box;
+
+        @media (max-width: 680px) {
+            padding: 10px;
+        }
+
+        h3 {
+            font-size: 40px;
+            margin: 10px;
+
+            @media (max-width: 680px) {
+                font-size: 25px;
+                margin: 5px;
+            }
+        }
+
+        .btn-contact-us {
+            color: white;
+            background-color: #0D1731;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-family: Avenir;
+            margin-top: 30px;
+            padding: 10px 30px;
+            cursor: pointer;
+
+            @media (max-width: 680px) {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+
+
+    & p {
+        color: #0D1731;
+        font-size: 22px;
+        font-family: Avenir;
+
+        @media (max-width: 680px) {
+            font-size: 16px;
+        }
+    }
+}

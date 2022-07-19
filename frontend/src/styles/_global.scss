@@ -1,0 +1,203 @@
+@import 'colors';
+@import 'pseudo-bs';
+@import 'grids';
+* {
+    font-family: 'Montserrat';
+}
+/**
+ * @description Main banner description
+ */
+.basic-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 360px;
+
+    @media all and (min-width: 1400px) {
+        min-height: 450px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, $dark-corp, $dark-corp, rgba(152,113,53,0.5), rgba(19, 29, 47, 0.5));
+        // mix-blend-mode: multiply;
+    }
+
+    &.no-before {
+        h1 {
+            font-weight: 400;
+        }
+        &::before {
+            background: transparent;
+        }
+    }
+
+    &.overlayer {
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-image: linear-gradient(to right, transparent, #F1B950);
+            overflow: hidden;
+            height: 20%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+
+    * {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (max-width: 1024px) {
+        height: 230px;
+    }
+
+    @media (max-width: 680px) {
+        height: 170px;
+    }
+
+
+    p {
+        color: white;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.5em;
+        line-height: auto;
+        text-align: center;
+        margin: auto;
+        // text-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+        @media (max-width: 1024px) {
+            padding-top: 1em;
+            font-size: 2.5em;
+        }
+
+        @media (max-width: 680px) {
+            padding-top: 0px;
+            max-width: 80%;
+        }
+    }
+
+    > div {
+        &:first-child {
+            padding: 1em;
+        }
+    }
+}
+
+.btn-outlined {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    border: 1px solid white;
+    width: fit-content;
+    text-align: center;
+    font: normal normal 300 20px "Montserrat";
+    letter-spacing: 0px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 10px 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.35s;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    &.reversed {
+        background-color: $dark-corp;
+        border-color: $dark-corp;
+        &:hover {
+            border-color: #FFF;
+        }
+    }
+
+    &.add-border {
+        &:hover {
+            border-color: $dark-corp;
+        }
+    }
+
+    &:hover {
+        background-color: #FFF;
+        color: $dark-corp;
+    }
+
+
+
+    // @media (max-width: 1024px) {
+    //     margin-top: 0px;
+    //     padding: 4px 8px;
+    //     font: normal normal 300 12px "Montserrat";
+    // }
+
+    // @media (max-width: 680px) {
+    //     margin-top: 0px;
+    //     padding: 4px 8px;
+    //     box-sizing: border-box;
+    //     text-align: center;
+    //     font: normal normal 300 12px "Montserrat";
+    // }
+}
+.pointer {
+    cursor: pointer !important;
+    * {
+        cursor: pointer !important;
+    }
+}
+hr {
+    &.one {
+        &.left-wrapper {
+            @media all and (max-width: 680px) {
+                display: none !important;
+            }
+        }
+    }
+}
+.container {
+    padding: 3em 0 0 0 !important;
+    width: 100% !important;
+    .two {
+        @media all and (max-width: 800px) {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
+}
+.txt-white {
+    color: #FFF;
+    *  {
+        color: #FFF;
+    }
+}
+.align-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

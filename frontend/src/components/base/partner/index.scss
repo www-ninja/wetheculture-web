@@ -1,0 +1,53 @@
+.partner {
+    padding-top: 50px;
+    width: 100%;
+    background: #0D1731;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    hr {
+        margin-top: 30px;
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 80%;
+
+        @media (max-width: 680px) {
+            visibility: hidden;
+        }
+    }
+
+    h2 {
+        font-family: 'Montserrat' !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 41px;
+        text-align: center;
+
+        @media (max-width: 680px) {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 41px;
+        }
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        height: 160px;
+
+        @media (max-width: 680px) {
+            flex-direction: column;
+        }
+
+        span {
+            margin: 0 20px;
+
+            @media (max-width: 680px) {
+                margin: 20px auto;
+            }
+        }
+    }
+}

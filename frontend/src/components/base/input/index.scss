@@ -1,0 +1,55 @@
+.input-group {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+
+    & .input-area {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        height: 30px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #505da7;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        width: 100%;
+
+        &:hover {
+            border-bottom: 2px solid black;
+        }
+        
+        &:active, &:focus {
+            border-bottom: 2px solid #505da7;
+        }        
+    }    
+
+    input[type=date]:required:invalid::-webkit-datetime-edit {
+        color: transparent;
+    }
+    input[type=date]:focus::-webkit-datetime-edit {
+        color: black !important;
+    }
+
+    & .label {
+        color: #505da7;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        transition: 0.5s ease-in-out;
+        cursor: text;
+    }
+
+    & .input-area:valid + .label {
+        top: -20px;
+    }
+
+    & .input-area:focus + .label {
+        top: -20px;
+    }
+}

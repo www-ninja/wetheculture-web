@@ -1,0 +1,41 @@
+.delete-modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color: #000000, $alpha: 0.2);
+    top: 0;
+    left: 0;
+
+    & .modal-content {
+        width: 600px;
+        border-radius: 8px;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        color:  #181E3F;
+        font-family: 'Avenir';
+    }
+
+    & .title {
+        font-size: 25px;
+        margin: 40px auto;
+    }
+
+    & .action {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 20px auto;
+        justify-content: center;
+
+        & .button {
+            margin: 0 10px;
+        }
+    }
+}
